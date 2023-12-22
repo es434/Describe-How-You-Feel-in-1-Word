@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/start.css">
+</head>
+<body>
+
+    
+
+    <div class="dropdown" id="dropdown">
+        <p id="le" style="color: white;" >Let's Create Account  <a href="form.html">Sign Up</a> <a href="signin.html">Sign In</a>  </p>
+        <h1 style="color:white">Describe How You Feel in 1 Word</h1>
+        <p id="lll" style="color: white;">Live. Love. Laugh</p>
+
+        <form action="" target="_blank" method="">
+            <label for="list"></label>
+            <select name="list" id="list" accesskey="target">
+                <option value="0" selected disabled > Describe How You Feel </option>
+                <optgroup label="Happiness">
+                    <option value="1">Joy</option>
+                    <option value="2">Hope</option>
+                    <option value="3">Tranquility</option>
+                    <option value="4">Pleasure</option>
+                    <option value="5">Satisfaction</option>
+                    <option value="6">Wonder</option>
+                </optgroup>
+
+                <optgroup label="Fear">
+                    <option value="7">Anxiety</option>
+                    <option value="8">Stress</option>
+                    <option value="9">Nervousness</option>
+                    <option value="10">Panic</option>
+                    <option value="11">Alert</option>
+                    
+                </optgroup>
+
+                <optgroup label="Hatred">
+                    <option value="12">Disgust</option>
+                    <option value="13">Hate</option>
+                    <option value="14">Shit</option>
+                    <option value="15">Objection</option>
+ 
+                </optgroup>
+
+                <optgroup label="Hatred">
+                    <option value="12">Disgust</option>
+                    <option value="13">Hate</option>
+                    <option value="14">Shit</option>
+                    <option value="15">Objection</option>
+ 
+                </optgroup>
+
+                <optgroup label="Sadness">
+                    <option value="16">Depression</option>
+                    <option value="17">Losing hope</option>
+                    <option value="18">Heart broken</option>
+                    <option value="19">Disappointment and frustration</option>
+                    <option value="20">Cut off from the world and isolation</option>
+                   
+                </optgroup>
+
+                <optgroup label="Other Feelings">
+                    <option value="21">Shame and embarrassment</option>
+                    <option value="22">Guilt</option>
+                    <option value="23">Surprise</option>
+                    <option value="24">pain</option>
+                    <option value="25">love</option>
+                    <option value="26">Pity</option>
+                    <option value="27">Envy</option>
+                    <option value="28">Gratitude</option>
+                   
+                </optgroup>
+
+            </select>
+            <br>
+        </form>
+         
+
+        <button type="submit" class="btn" onclick="my()">My Message</button>
+        <div class="popup" id="popup">
+            <img src="images/4.webp" > 
+            <h2 id="appear"></h2>
+            <button type="button" onclick="closePopup()">Enjoy Your Day</button>
+       </div>
+    </div>
+
+
+    
+<script>
+
+    function my(){
+        openPopup();
+        optionClicked();
+    }
+
+    let popup=document.getElementById("popup");
+    function openPopup(){
+    popup.classList.add("open-popup");
+}
+    function closePopup(){
+    popup.classList.remove("open-popup");
+}
+
+function optionClicked(){
+
+let userPicked = document.getElementById("list").value;
+var div = document.getElementById("appear");
+if(userPicked == '1'){
+    div.innerHTML = "“Joy is a net of love by which you can catch souls.”"+'<br>'+'<br>'+'<a target="_blank" href="https://theconversation.com/joy-is-good-for-your-body-and-your-mind-three-ways-to-feel-it-more-often-198276">Read More About Your Feelings From Visiting This Link.</a>';     
+}else if(userPicked == '2'){
+    div.innerHTML = "“Hope lies in dreams, in imagination, and in the courage of those who dare to make dreams into reality.”"+'<br>'+'<br>'+'<a target="_blank" href="https://emotiontypology.com/positive_emotion/hope/">Read More About Your Feelings From Visiting This Link.</a>';
+}
+else if(userPicked == '3'){
+        div.innerHTML = "“Never be in a hurry; do everything quietly and in a calm spirit. Do not lose your inner peace for anything whatsoever, even if your whole world seems upset.”"+'<br>'+'<br>'+'<a target="_blank" href="https://en.wikipedia.org/wiki/Tranquillity">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '4'){
+        div.innerHTML = "“Happiness held is the seed; happiness shared is the flower.”"+'<br>'+'<br>'+'<a target="_blank" href="https://en.wikipedia.org/wiki/Pleasure">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '5'){
+        div.innerHTML = "“Satisfaction lies in the effort, not in the attainment, full effort is full victory.”"+'<br>'+'<br>'+'<a target="_blank" href="https://emotiontypology.com/positive_emotion/satisfaction/">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '6'){
+        div.innerHTML = "“Mystery creates wonder and wonder is the basis of man's desire to understand”"+'<br>'+'<br>'+'<a target="_blank" href="https://en.wikipedia.org/wiki/Wonder_(emotion)">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '7'){
+        div.innerHTML = "“Take your time to feel OK. The universe will wait for you.”"+'<br>'+'<br>'+'<a target="_blank" href="https://www.medicalnewstoday.com/articles/323454">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '8'){
+        div.innerHTML = "” Stars shine brightest in the dark. This is a difficult time, but I know your determination is going to shine through.”"+'<br>'+'<br>'+'<a target="_blank" href="https://my.clevelandclinic.org/health/articles/6406-emotional-stress-warning-signs-management-when-to-get-help">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '9'){
+        div.innerHTML = "“Anxiety’s like a rocking chair. It gives you something to do, but it doesn’t get you very far.”"+'<br>'+'<br>'+'<a target="_blank" href="https://emotiontypology.com/negative_emotion/nervousness/">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '10'){
+        div.innerHTML = "“Smile, breathe, and go slowly.”"+'<br>'+'<br>'+'<a target="_blank" href="https://www.mindful.org/calming-rush-panic-emotions/">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '11'){
+        div.innerHTML = "“Alert presence is the garden of personal growth.”"+'<br>'+'<br>'+'<a target="_blank" href="https://en.wikipedia.org/wiki/Alertness">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '12'){
+        div.innerHTML = "“Peace can become a lens through which you see the world. Be it. Live it. Radiate it out. Peace is an inside job.”"+'<br>'+'<br>'+'<a target="_blank" href="https://www.paulekman.com/universal-emotions/what-is-disgust/">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '13'){
+        div.innerHTML = "“You cannot hate other people without hating yourself”"+'<br>'+'<br>'+'<a target="_blank" href="https://www.psychologytoday.com/us/blog/between-cultures/201911/understanding-hate">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '14'){
+        div.innerHTML = "“Weather out the storm in the island of tranquility to find inner peace.”"+'<br>'+'<br>'+'<a target="_blank" href="https://en.wikipedia.org/wiki/Shit">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '15'){
+        div.innerHTML = "“A creative life cannot be sustained by approval any more than it can be destroyed by criticism.”"+'<br>'+'<br>'+'<a target="_blank" href="https://www.liveseysolar.com/the-difference-between-emotional-and-rational-objections/">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '16'){
+        div.innerHTML = "“Even the darkest hour only has 60 minutes.”"+'<br>'+'<br>'+'<a target="_blank" href="https://www.psychiatry.org/patients-families/depression/what-is-depression">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '17'){
+        div.innerHTML = "“Hope is holding on to the promises of God,”"+'<br>'+'<br>'+'<a target="_blank" href="https://psychcentral.com/anxiety/the-9-types-of-hopelessness-and-how-to-overcome-them">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '18'){
+        div.innerHTML = "“Every time your heart is broken, a doorway cracks open to a world full of new beginnings, new opportunities.”"+'<br>'+'<br>'+'<a target="_blank" href="https://en.wikipedia.org/wiki/Broken_heart">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '19'){
+        div.innerHTML = "“Disappointment is the nurse of wisdom.”"+'<br>'+'<br>'+'<a target="_blank" href="https://www.betterup.com/blog/disappointment">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '20'){
+        div.innerHTML = "“What makes us lonely are the feelings that we never share with anyone.”"+'<br>'+'<br>'+'<a target="_blank" href="https://loneliness.org.nz/loneliness/terms/emotional-isolation/">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '21'){
+        div.innerHTML = "“Do not be embarrassed by your failures, learn from them and start again.”"+'<br>'+'<br>'+'<a target="_blank" href="https://en.wikipedia.org/wiki/Shame">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '22'){
+        div.innerHTML = "”Guilt is always hungry, don't let it consume you.“"+'<br>'+'<br>'+'<a target="_blank" href="https://en.wikipedia.org/wiki/Guilt_(emotion)">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '23'){
+        div.innerHTML = "“Surprises are the little miracles that remind us to appreciate the present moment.”"+'<br>'+'<br>'+'<a target="_blank" href="https://www.paulekman.com/universal-emotions/what-is-surprise/">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '24'){
+        div.innerHTML = "”Some people think that to be strong is to never feel pain. In reality, the strongest people are the ones who feel it, understand it, and accept it.“"+'<br>'+'<br>'+'<a target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152687/">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '25'){
+        div.innerHTML = "”Love makes your soul crawl out from its hiding place.“"+'<br>'+'<br>'+'<a target="_blank" href="https://www.verywellmind.com/what-is-love-2795343">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '26'){
+        div.innerHTML = "”Self-pity is our worst enemy and if we yield to it, we can never do anything wise in this world “"+'<br>'+'<br>'+'<a target="_blank" href="https://en.wikipedia.org/wiki/Pity">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '27'){
+        div.innerHTML = "“To live without comparison is to remove a tremendous burden.”"+'<br>'+'<br>'+'<a target="_blank" href="https://en.wikipedia.org/wiki/Envy">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+    else if(userPicked == '28'){
+        div.innerHTML = "“We must find time to stop and thank the people who make a difference in our lives.”"+'<br>'+'<br>'+'<a target="_blank" href="https://www.verywellmind.com/what-is-gratitude-5206817">Read More About Your Feelings From Visiting This Link.</a>';
+    
+    }
+   
+    else{
+        alert("You must pick an option.");
+    }
+    
+}
+
+
+</script>
+    
+</body>
+</html>
